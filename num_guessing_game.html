@@ -31,7 +31,7 @@
   <body>
     <h1>Number guessing game</h1>
 
-    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    <p>We have selected a random number between 1 and 100. See if you can guess it in <strong>10 turns or fewer</strong>. We'll tell you if your guess was too high or too low.</p>
 
     <div class="form">
       <label for="guessField">Enter a guess: </label>
@@ -48,6 +48,7 @@
     <script>
 
       let randomNumber = Math.floor(Math.random() * 100) + 1
+      //console.log(randomNumber)
 
       const guesses = document.querySelector('.guesses')
       const lastResult = document.querySelector('.lastResult')
@@ -80,9 +81,9 @@
             lastResult.textContent = 'Wrong!'
             lastResult.style.backgroundColor = 'red'
             if (userGuess < randomNumber) {
-                lowOrHi.textContent = 'Last guess was too low!'
+                lowOrHi.textContent = `Nope, Guess higher 👆 | Guesses left: ${10 - guessCount}`
             } else if (userGuess > randomNumber) {
-                lowOrHi.textContent = 'Last guess was too high!'
+                lowOrHi.textContent = `Nope! Guess lower 👇 | Guesses left: ${10 - guessCount}`
             }
         }
 
