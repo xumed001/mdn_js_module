@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 2em 0;
+      }
+
+      h1 {
+        margin-top: 2rem;
+      }
+
+      * {
+        max-width: 700px;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
+  </head>
+
+  <body>
+    <h1>Bands</h1>
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    // Add your code here
+    const myBand = {
+        name: 'Linkin Park',
+        nationality: 'USA',
+        genre: 'rock',
+        members: 10,
+        formed: 1996,
+        split: false,
+        albums: [
+            {
+                name: 'Xero',
+                released: 'October 24, 2000'
+            },
+            {
+                name: 'Meteora',
+                released: 'March 25, 2003'
+            }
+        ],
+        bandSummary : function(){
+            return `${this.name} is one of the most popular ${this.genre} bands in the world. Originating from ${this.nationality}, they are a group of ${this.members} members.\n
+            
+
+            Their first album ${this.albums[0].name} was released on ${this.albums[0].released}.   
+            
+
+            Three years later they released their second album ${this.albums[1].name} on ${this.albums[1].released}` 
+        }
+    }
+
+    // console.log(myBand.albums[0].name)
+    let bandInfo = myBand.bandSummary()
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
