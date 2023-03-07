@@ -57,15 +57,27 @@
         this.name = name
         this.breed = breed
         this.greeting = function(){
-            console.log(`Hello, said ${ this.name } the ${ this.breed }.`)
+            let text = `Hello, said ${ this.name } the ${ this.breed }.`
+            return text;
         }
     }
 
     const cat1 = new CreateCats('Bertie', 'Cymric')
     const cat2 = new CreateCats('Elfie', 'Aphrodite Giant')
 
-    cat1.greeting()
-    cat2.greeting()
+    // cat2.greeting()
+
+    const preview = document.querySelector('.preview')
+    
+    let paras = document.createElement('p')
+    paras.textContent = cat1.greeting()
+
+    let paras2 = document.createElement('p')
+    paras2.textContent = cat2.greeting()
+    
+    preview.appendChild(paras)
+    preview.appendChild(paras2)
+
 
   </script>
 
