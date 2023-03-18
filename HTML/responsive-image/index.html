@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Image</title>
+    <style>
+        body{
+            /* border: 1px solid red; */
+            width: 800px;
+            margin: 0 auto;
+        }
+        img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 6rem;
+        }
+    </style>
 </head>
 <body>
-    
+    <picture>
+        <source media="(max-width: 799px)" srcset="sunset-close.png" />
+        <source media="(min-width: 800px)" srcset="sunset.png" />
+        <img src="sunset.png" alt="Sunset in a cityscape">
+    </picture>
+
+    <img
+        srcset="sunset-small.png, sunset.png 2x" 
+        src="sunset.png" 
+        alt="Sunset on a cityscape" />
 </body>
 </html>
