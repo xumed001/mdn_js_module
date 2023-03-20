@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My spending record</title>
+    <style>
+        html {
+        font-family: sans-serif;
+        }
+
+        table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200,200,200);
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        }
+
+        td, th {
+        border: 1px solid rgb(190,190,190);
+        padding: 10px 20px;
+        }
+
+        th {
+        background-color: rgb(235,235,235);
+        }
+
+        td {
+        text-align: center;
+        }
+
+        tr:nth-child(even) td {
+        background-color: rgb(250,250,250);
+        }
+
+        tr:nth-child(odd) td {
+        background-color: rgb(245,245,245);
+        }
+
+        caption {
+        padding: 10px;
+        }
+
+        tbody {
+        font-size: 95%;
+        font-style: italic;
+        }
+
+        tfoot {
+        font-weight: bold;
+        }
+
+    </style>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>My spending record</h1>
+
+      <table>
+        <caption>How I chose to spend my money</caption>
+
+          <thead>
+            <th scope="col">Purchase</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date</th>
+            <th scope="col">Evaluation</th>
+            <th scope="col">Cost (€)</th>
+          </thead>
+
+          <tfoot>
+            <td colspan="4">SUM</td>
+            <td>118</td>
+          </tfoot>
+
+          <tbody>
+                <tr>
+                    <td scope="row">Haircut</td>
+                    <td>Hairdresser</td>
+                    <td>12/09</td>
+                    <td>Great idea</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td scope="row">Lasagna</td>
+                    <td>Restaurant</td>
+                    <td>12/09</td>
+                    <td>Regrets</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td scope="row">Shoes</td>
+                    <td>Shoeshop</td>
+                    <td>13/09</td>
+                    <td>Big regrets</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td scope="row">Toothpaste</td>
+                    <td>Supermarket</td>
+                    <td>13/09</td>
+                    <td>Good</td>
+                    <td>5</td>
+                </tr>
+          </tbody>
+
+    </table>
+
+  </body>
+</html>
