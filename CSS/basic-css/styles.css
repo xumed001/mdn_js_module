@@ -1,0 +1,32 @@
+
+body {
+    background-color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: crimson;
+}
+
+h1 + p {
+    font-size: 200%;
+}
+
+p,
+li {
+    color: darkcyan;
+}
+
+li {
+    list-style-type: square;
+  }
+  
+.special {
+    color: darksalmon;
+    font-weight: bold;
+}
+
+li em {
+    color: aqua;
+}
+
