@@ -1,0 +1,45 @@
+
+body {
+    font-family:cursive;
+}
+
+/* will match any list item with a class attribute. */
+.ex1 li[class] {
+    font-size: 200%;
+}
+
+/* matches a selector with a class of a, */
+.ex1 li[class="a"] {
+    background-color: teal;
+}
+
+/* will match a class of a but also a value that contains the class of a as part of a whitespace-separated list. It selects the second and third list items. */
+.ex1 li[class~="a"] {
+    color: aqua;
+}
+
+
+/* starts with value: "a" */
+.ex2 li[class^="a"] {
+    font-size: 200%;
+}
+
+/* ends with value: "a" */
+.ex2 li[class$="a"] {
+    background-color: yellow;
+}
+
+/* any value where "a" appears */
+.ex2 li[class*="a"] {
+    color: red;
+}
+
+
+.ex3 li[class^="a"] {
+    background-color: yellow;
+}
+
+/* "i" flag tells the browser to match ASCII characters case-insensitively.  */
+.ex3 li[class^="a" i] {
+    color: crimson;
+}

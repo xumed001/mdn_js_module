@@ -30,12 +30,18 @@ body {
     padding: 20px;
   }
 
+  /* pseudo-classes, which style certain states of an element */
   a:link,
   a:visited {
     color: #fb6542;
   }
-
+  
   a:hover {
     text-decoration: none;
     color: green;
+  }
+
+  /* pseudo-elements, which select a certain part of an element rather than the element itself*/
+  p::first-line {
+    color: #fb6542;
   }
