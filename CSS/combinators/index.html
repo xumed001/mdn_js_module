@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Combinators</title>
+</head>
+<body>
+    <h2>Descendant combinator</h2>
+    <div class="box">
+        <p>Text in .box</p>
+    </div>
+    <p>Text not in .box</p>
+    <hr>
+    <h2>Child combinator</h2>
+    <ul class="cc">
+        <li>Unordered item</li>
+        <li>Unordered item
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <h2>Adjacent sibling</h2>
+    <article>
+        <h3>A heading</h3>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                melon azuki bean garlic.</p>
+    
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </article>
+    <hr>
+    <h2>General sibling combinator</h2>
+    <article class="gsc">
+        <h1>A heading</h1>
+        <p>I am a paragraph.</p>
+        <div>I am a div</div>
+        <p>I am another paragraph.</p>
+    </article>
+    <hr>
+
+    <div class="container">
+        <h2>Task 3 - Combinators</h2>
+        <p>Veggies es <a href="http://example.com">bonus vobis</a>, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+      
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <table>
+          <tbody>
+            <tr>
+              <th>Fruits</th>
+              <th>Vegetables</th>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>Potato</td>
+            </tr>
+            <tr>
+              <td>Orange</td>
+              <td>Carrot</td>
+            </tr>
+            <tr>
+              <td>Tomato</td>
+              <td>Parsnip</td>
+            </tr>
+            <tr>
+              <td>Kiwi</td>
+              <td>Onion</td>
+            </tr>
+            <tr>
+              <td>Banana</td>
+              <td>Beet</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <hr>
+    <h2>Task 5</h2>
+    <div class="five">
+        <ul>
+            <li><a href="https://example.com">Link 1</a></li>
+            <li><a href="http://example.com" title="Visit example.com">Link 2</a></li>
+            <li><a href="/contact">Link 3</a></li>
+            <li><a href="../contact/index.html">Link 4</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

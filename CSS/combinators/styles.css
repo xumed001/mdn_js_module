@@ -1,0 +1,67 @@
+
+/* Descendant combinator represented by a single space(" ") */
+.box p {
+    color: rebeccapurple;
+}
+
+/* direct descandant, child combinator (>) is placed between two CSS selectors */
+.cc > li {
+    border-top: 5px solid crimson;
+}
+
+/* adjacent sibling selector (+) is placed between two CSS selectors */
+h3 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+/* general sibling combinator (~) selects all elements that come anywhere after */
+.gsc h1 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+
+.container p:first-child {
+    font-size: 150%
+}
+
+.container p:first-child::first-line {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: green;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #333;
+    color: #fff;
+    
+}
+
+
+.five a {
+    border: 5px solid grey;
+}
+
+.five a[title] {
+    border-color: pink
+}
+
+.five a[href*="contact"] {
+    border-color: orange;
+}
+
+.five a[href^="https"] {
+    border-color: green;
+}
