@@ -1,0 +1,12 @@
+
+
+.main {
+    color: green;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+.special {
+    color: black;
+    font-weight: bold;
+}
