@@ -30,5 +30,37 @@
             </ul>
         </li>
     </ul>
+    <hr>
+    <h2>Controlling inheritance</h2>
+    <ul class="second">
+        <li>Default <a href="#">link</a> color</li>
+        <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+        <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+        <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+    </ul>
+    <hr>
+    <h2>Specificity</h2>
+    <div id="outer" class="container">
+        <div id="inner" class="container">
+            <ul>
+                <li class="nav"><a href="#">One</a></li>
+                <li class="nav"><a href="#">Two</a></li>
+            </ul>
+        </div>
+    </div>
+    <h2>!important flag</h2>
+    <article>
+        <p class="better">This is a paragraph.</p>
+        <p class="better" id="winning">One selector to rule them all!</p>
+        <p>Note: The only way to override an important declaration is to include another important declaration with the same specificity later in the source order, or one with higher specificity, or to include an important declaration in a prior cascade layer (we haven't covered cascade layers yet).</p>
+    </article>
+    <hr>
+    <h2>cascade layers</h2>
+    <div class="cascade">
+        <p id="addSpecificity">
+            A paragraph with a border and background
+        </p>
+    </div>
+
 </body>
 </html>

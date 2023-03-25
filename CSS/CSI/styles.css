@@ -10,3 +10,130 @@
     color: black;
     font-weight: bold;
 }
+
+
+.second li {
+    color: green;
+}
+          
+.my-class-1 a {
+    color: inherit;
+}
+          
+.my-class-2 a {
+    color: initial;
+}
+          
+.my-class-3 a {
+    color: unset;
+}
+
+
+
+/* 1. specificity: 1-0-1 */
+#outer a {
+    background-color: red;
+}
+        
+/* 2. specificity: 2-0-1 -----wins-----*/
+#outer #inner a {
+    background-color: blue;
+}
+
+/* 3. specificity: 1-0-4 */
+#outer div ul li a {
+    color: yellow;
+}
+
+/* 4. specificity: 1-1-3 -----wins-----*/
+#outer div ul .nav a {
+    color: white;
+}
+
+/* 5. specificity: 0-2-4 */
+div div li:nth-child(2) a:hover {
+    border: 10px solid black;
+}
+
+/* 6. specificity: 0-2-3 */
+div li:nth-child(2) a:hover {
+    border: 10px dashed black;
+}
+
+/* 7. specificity: 0-3-3 ---- wins -----*/
+div div .nav:nth-child(2) a:hover {
+    border: 10px double black;
+}
+
+#outer a {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#outer ul {
+    padding: 0;
+}
+
+#outer li {
+    list-style-type: none;
+}  
+
+
+
+
+#winning {
+    background-color: red;
+    border: 1px solid black;
+}
+    
+.better {
+    background-color: gray;
+    border: none !important;
+}
+    
+article p {
+    background-color: rgb(81, 81, 183);
+    color: white;
+    padding: 5px;
+}  
+
+
+/* 
+Cascade layers 
+
+non-layered normal styles take precedence over layered normal styles, no matter the specificity, and important layered styles take precedence over important styles declared in later layers, again, no matter the specificity. 
+*/
+@layer firstLayer, secondLayer;
+
+.cascade p { /* 0-0-1 */
+  background-color: red;
+  color: gray !important;
+  border: 5px inset purple;
+}
+
+.cascade p#addSpecificity { /* 1-0-1 */
+  border-style: solid !important;
+}
+
+@layer firstLayer {
+  #addSpecificity { /* 1-0-0 */
+    background-color: blue;
+    color: black !important;
+    border-width: 5px;
+    border-style: dashed !important;
+  }
+}
+
+@layer secondLayer {
+    .cascade p#addSpecificity { /* 1-0-1 */
+    background-color: green;
+    color: orange !important;
+    border-width: 10px;
+    border-style: dotted !important;
+  }
+}   
