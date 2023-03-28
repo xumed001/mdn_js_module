@@ -1,20 +1,24 @@
 
 
 @media (min-width: 50em) {
-    @layer site;
+    @layer mobile;
 }
 
-@layer page {
+@layer desktop {
     h1 {
         text-decoration: overline;
         color: red;
+        background-color: darkblue;
+        padding-bottom: 200px;
     }
 }
 
-@layer site {
+@layer mobile {
     h1 {
         text-decoration: underline;
         color: green;
+        background-color: black;
+        padding-bottom: 200px;
     }
 }
 
