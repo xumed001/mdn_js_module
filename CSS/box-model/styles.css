@@ -1,0 +1,138 @@
+/* html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+/* ------------------------------------------------------------------   */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+p, 
+ul {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+li {
+  border: 2px solid blue;
+  padding: .5em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}   
+
+/* ------------------------------------------------------------------   */
+.ex2 p, 
+.ex2 ul {
+  border: 2px solid rebeccapurple;
+}
+
+.ex2 span,
+.ex2 li {
+  border: 2px solid blue;
+}
+
+.ex2 ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+} 
+
+.inline {
+  display: inline;
+}
+
+/* ------------------------------------------------------------------   */
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .alternate {
+    box-sizing: border-box;
+    width:390px;
+    height: 240px;
+  }
+
+/* ------------------------------------------------------------------   
+Margin collapsing
+
+Depending on whether two elements whose margins touch have positive or negative margins, the results will be different:
+
+    Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.
+
+    Two negative margins will collapse and the smallest (furthest from zero) value will be used.
+
+    If one margin is negative, its value will be subtracted from the total.
+
+    */
+
+.one {
+    margin-bottom: 40px;
+  }
+  
+  .two {
+    margin-top: 30px;
+  }
+
+/* ------------------------------------------------------------------   */
+.border-container {
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double darkblue;
+}
+
+.border-box {
+    background-color: lightgray;
+    border: 1px solid #333333;
+    border-top-style: dotted;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+}
+
+/* ------------------------------------------------------------------   */
+.inline-box {
+    margin: 20px;
+    padding: 20px;
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    border: 2px solid blue;
+  }
+
+.links {
+    display: flex;
+    gap: 1em;
+}
+
+.links li {
+    background-color: rgb(184, 217, 255);
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+.links li:hover {
+    background-color: rgb(69, 209, 255);
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------   */
