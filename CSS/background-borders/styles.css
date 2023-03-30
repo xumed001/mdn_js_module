@@ -1,0 +1,103 @@
+
+
+.box {
+    background-color: #567895;
+    padding: 1em;
+}
+
+.box h2 {
+    background-color: black;
+    color: whitesmoke;
+}
+
+span {
+    background-color: azure;
+}
+
+/* ----------------------------------------------------------------------------- */
+.wrapper {
+    border: 1px solid red;
+    /* display: flex; */
+    /* height: 200px; */
+}
+
+
+/* 
+1. cover — the browser will make the image just large enough so that it completely covers the box area while still retaining its aspect ratio. In this case, part of the image is likely to end up outside the box.
+
+2. contain — the browser will make the image the right size to fit inside the box. In this case, you may end up with gaps on either side or on the top and bottom of the image, if the aspect ratio of the image is different from that of the box. */
+
+
+.box-a {
+    /* border: 1px solid red; */
+    height: 200px;
+    background-size: contain;
+    background-image: url(images/balloons.jpg);
+}
+
+.box-b {
+    height: 200px;
+    background-size: 50px;
+    background-image: url(images/star.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.gradient-a {
+    height: 200px;
+    background-image: linear-gradient(90deg, rgba(0, 249, 255,1) 39%, rgba(51, 56, 57, 1) 96%);
+}
+
+.gradient-b {
+    height: 200px;
+    background-image: radial-gradient(circle, rgba(0, 249, 255,1) 39%, rgba(51, 56, 57, 1) 96%);
+    background-size: 50px 50px;
+}
+/* ----------------------------------------------------------------------------- */
+
+.bsp-box {
+    height: 200px;
+    background: linear-gradient(90deg, rgba(218, 70, 70, 0.5) 39%, rgb(31, 139, 161) 96%) center center / 800px 200px no-repeat, url(images/star.png) center no-repeat, antiquewhite;
+}
+/* ----------------------------------------------------------------------------- */
+
+.b-box {
+    height: 200px;
+    border: 15px solid rebeccapurple;
+    border-radius: 2em;
+    border-top-right-radius: 10% 50%;
+}
+/* ----------------------------------------------------------------------------- */
+
+.t1-box {
+    height: 200px;
+    background-image: url(images/balloons.jpg);
+    background-size: 900px;
+    border: 6px solid black;
+    border-radius: 1em;
+  }
+  
+.t1-box h3 {
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    padding: 2em;
+  }
+/* ----------------------------------------------------------------------------- */
+
+.t2-box {
+    height: 120px;
+    border: 5px solid lightblue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+.t2 {
+    /* border: 1px solid red; */
+    padding: 2rem;
+    text-align: center;
+    background-image: url(images/star.png), url(images/star.png);
+    background-position: 10% 50%, 90% 50%;
+    background-repeat: no-repeat, repeat-y;
+}
