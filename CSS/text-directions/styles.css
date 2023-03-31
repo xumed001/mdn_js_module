@@ -1,0 +1,84 @@
+
+
+.ex1 h3 {
+  writing-mode:vertical-lr;
+  background-color: black;
+  color: #fff;
+  padding: 1em;
+}
+
+.box {
+inline-size: 400px;
+}
+
+.horizontal {
+  border: 2px solid red;
+  writing-mode: horizontal-tb;
+}
+
+.vertical {
+  border: 2px solid red;
+  writing-mode: vertical-rl;
+}
+/* ------------------------------------------------------------------------ */
+
+.ex3 .box {
+  inline-size: 200px;
+  /* writing-mode: horizontal-tb; */
+  writing-mode: vertical-rl;
+}
+
+.ex3 .logical {
+  margin-block-start: 20px;
+  padding-inline-end: 2em;
+  padding-block-start: 2px;
+  border-block-start: 5px solid pink;
+  border-inline-end: 10px dotted rebeccapurple;
+  border-block-end: 1em double orange;
+  border-inline-start: 1px solid black;
+}
+
+/* Physical prop values
+
+.physical {
+  margin-top: 20px;
+  padding-right: 2em;
+  padding-top: 2px;
+  border-top: 5px solid pink;
+  border-right: 10px dotted rebeccapurple;
+  border-bottom: 1em double orange;
+  border-left: 1px solid black;
+} */
+
+/* logical prop values */
+.ex3 .physical {
+  margin-block-start: 20px;
+  padding-inline-end: 2em;
+  padding-block-start: 2px;
+  border-block-start: 5px solid pink;
+  border-inline-end: 10px dotted rebeccapurple;
+  border-block-end: 1em double orange;
+  border-inline-start: 1px solid black;
+}
+
+.ex3 h2 {
+  border-bottom: 5px solid black;
+}
+     
+/* ------------------------------------------------------------------------ */
+
+.ex4 .box {
+  inline-size: 200px;
+  writing-mode: horizontal-tb;
+  border: 1px dotted gray;
+}
+
+img {
+  float: inline-start;
+  padding-block-start: 15px;
+  margin-inline-end: 10px;
+  margin-block-end: 10px;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
