@@ -1,0 +1,36 @@
+
+
+.ex1 {
+    border: 1px solid #333333;
+    width: 200px;
+    height: 100px;
+  }
+
+.ex2 {
+    border: 1px solid #333333;
+    width: 100px;
+    font-size: 250%;
+}
+
+.ex3 {
+    border: 1px solid #333333;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.ex4 {
+    border: 1px solid #333333;
+    width: 200px;
+    height: 100px;
+    font-size: 125%;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+}
+
+.ex5 {
+    border: 5px solid #333333;
+    width: 100px;
+    font-size: 250%;
+    overflow-x: scroll;
+}
