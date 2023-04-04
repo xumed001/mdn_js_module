@@ -1,0 +1,103 @@
+
+
+html {
+    font-size: 16px;
+}
+/* ----------------------------------------------------------------------------- */
+h1 {
+    color: black;
+    background-color: rgb(197, 93, 161);
+}
+
+.ex1 {
+    font-size: 1.5em;
+    box-sizing: border-box;
+  }
+  
+.ex1 .px {
+    border: 4px solid blue;
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+.ex1 .vw {
+    border: 4px solid blue;
+    margin: 10px;
+    padding: 5px;
+    width: 20vw;
+  }
+  /* ----------------------------------------------------------------------------- */
+  
+.em {
+border: 4px solid blue;
+margin: 10px;
+padding: 5px;
+width: 10em;
+}
+
+.ems li {
+    font-size: 1.3em;
+}
+
+.rems li {
+    font-size: 1.3rem;
+}
+/* ----------------------------------------------------------------------------- */
+
+.px3 {
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+    border: 4px solid blue;
+}
+
+.percent3 {
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    border: 4px solid blue;
+}
+
+
+.wrapper {
+    width: 400px;
+    border: 5px solid rebeccapurple;
+}
+
+.wrapper .px {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid blue;
+    width: 200px;
+}
+
+.wrapper .percent {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid blue;
+    width: 40%;
+}
+
+.percentage li {
+    font-size: 80%;
+}
+/* ----------------------------------------------------------------------------- */
+
+.ex4 {
+    background-color: bisque;
+    margin: 10px;
+    padding: 5px;
+}
+
+.box4 {
+    border: 4px solid blue;
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+    opacity: .5;
+}
+
+.button4 {
+    opacity: .5;
+}
