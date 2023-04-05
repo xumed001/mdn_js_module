@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sizing items</title>
+</head>
+<body>
+    <h1>Sizing items in CSS</h1>
+
+    <h2>The natural and intrinsic size of things</h2>
+    <h3>intrinsic size: img border</h3>
+    <img class="img-one" src="../background-borders/images/star.png" alt="star">
+
+    <h3>Natural size: div border</h3>
+    <div class="ex1"></div>
+
+    <hr>
+    <h2>Setting a specific size</h2>
+    <div class="ex3">
+        <div class="box-3">These boxes both have a height set, this box has content in it which will need more space than the assigned height, and so we get overflow. </div>
+    </div>
+    
+    <br>
+    <h3>Using Percentages</h3>
+    <div class="per-box">I have a percentage width</div>
+
+    <br>
+    <h3>Percentage margins and padding</h3>
+    <div class="per-box-2">
+        I have margin and padding set to 10% on all sides.
+    </div>
+
+    <hr>
+    <h2>min- and max- sizes</h2>
+    <div class="ex4">
+        <div class="ex4-box"></div>
+        <div class="ex4-box">These boxes both have a min-height set, this box has content in it which will need more space than the assigned height, and so it grows from the minimum. These boxes both have a min-height set, this box has content in it which will need more space than the assigned height, and so it grows from the minimum.</div>
+    </div>
+
+    <br>
+    <h3>min max sizes on img</h3>
+    <div class="ex5">
+        <div class="ex5-box"><img src="../background-borders/images/star.png" alt="star" class="ex5-width"></div>
+        <div class="ex5-box"><img src="../background-borders/images/star.png" alt="star" class="ex5-max"></div>
+        <div class="minibox"><img src="../background-borders/images/star.png" alt="star" class="ex5-max"></div>
+    </div>
+
+    <hr>
+    <h2>Viewport units</h2>
+    <div class="ex6">
+        A
+    </div>
+
+</body>
+</html>
