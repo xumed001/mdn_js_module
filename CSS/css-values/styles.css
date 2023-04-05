@@ -101,3 +101,38 @@ width: 10em;
 .button4 {
     opacity: .5;
 }
+
+/* ----------------------------------------------------------------------------- */
+
+.string {
+    width: 400px;
+    padding: 1em;
+    border-radius: .5em;
+    border: 5px solid rebeccapurple;
+    background-color: lightblue;
+}
+
+/* .string::before {
+    content: "This is a string. I know becasue it is quoted in the CSS ";
+} */
+
+.string::after {
+    content: "This is a string. I know becasue it is quoted in the CSS";
+}
+/* ----------------------------------------------------------------------------- */
+
+.func-wrapper {
+    width: 400px;
+    /* height: 200px; */
+    border: 1px solid red;
+}
+
+.func-box {
+    width: calc(20% + 100px);
+    /* height: calc(100% - 10px); */
+    padding: 1em;
+    border: 5px solid rebeccapurple;
+    background-color: lightblue;
+}
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
