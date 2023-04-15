@@ -1,0 +1,48 @@
+
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+ul,
+ol,
+dl,
+p {
+    font-size: 1.5rem;
+}
+
+li,
+p {
+    line-height: 1.5;
+}
+
+dd,
+dt {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: 800;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 2rem;
+    background-image: url(../background-borders/images/star.png);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
