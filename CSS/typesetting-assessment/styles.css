@@ -1,0 +1,126 @@
+
+
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 600px;
+    max-width: 1000px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    word-spacing: 0.3rem;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+border-top: 5px solid #a66;
+border-bottom: 5px solid #a66;
+text-align: center;
+/* background-color: rgba(169, 103, 103, .7); */
+}
+
+
+h1,
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+
+/* ------------------------------------------------------------links */
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a[href^="http"] {
+    background: url(images/external-link.png) no-repeat 100% 0%;
+    background-size: 10px 10px;
+    padding-right: 12px;
+}
+
+a:link {
+    color: #a66;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+
+a:active {
+    color: brown;
+}
+
+/* ------------------------------------------------------------nav */
+nav a{
+    display: block;
+    border: 1px solid #a66;
+    border-radius: 5px;
+    line-height: 4;
+    margin-top: 2rem;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #a66;
+    color: azure;
+}
+
+nav li {
+    list-style: none;
+}
