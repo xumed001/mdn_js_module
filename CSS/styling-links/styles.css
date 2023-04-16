@@ -1,0 +1,72 @@
+
+
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:focus,
+a:hover {
+    border-bottom: 1px solid;
+}
+
+
+a:active {
+    color: red;
+}
+
+a[href^="http"] {
+    background: url(images/external-link.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 18px;
+}
+
+.container {
+    display: flex;
+    gap: 0.625%;
+}
+
+.container a {
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 3;
+    color: black;
+}
+
+.container a:link,
+.container a:visited,
+.container a:focus {
+    background: palegoldenrod;
+    color: black;
+}
+.container a:hover {
+    background: orange;
+}
+
+.container a:active {
+    background: darkred;
+    color: whitesmoke;
+}
