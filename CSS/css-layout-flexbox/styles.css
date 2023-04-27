@@ -1,0 +1,86 @@
+
+
+html {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(126, 85, 126);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+
+section {
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: rgb(192, 255, 255);
+    flex: 1 200px; 
+
+}
+
+article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+}
+
+article:nth-of-type(3) div:first-child {
+    flex: 1 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+div {
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button:first-child {
+    /* align-self: flex-end; */
+    order: 1;
+}
+
+button:last-child {
+    order: -1;
+}
+
+
+
+.parent {
+    border: 1px solid red;
+    display: flex; 
+    align-items: center;
+    justify-content: center;        
+}
+   
