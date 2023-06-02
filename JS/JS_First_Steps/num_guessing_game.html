@@ -11,9 +11,9 @@
       }
 
       body {
-        width: 50%;
+        /* width: 50%; */
         max-width: 800px;
-        min-width: 480px;
+        /* min-width: 480px; */
         margin: 0 auto;
       }
       
@@ -47,9 +47,6 @@
 
     <script>
 
-      let randomNumber = Math.floor(Math.random() * 100) + 1
-      //console.log(randomNumber)
-
       const guesses = document.querySelector('.guesses')
       const lastResult = document.querySelector('.lastResult')
       const lowOrHi = document.querySelector('.lowOrHi')
@@ -57,15 +54,21 @@
       const guessSubmit = document.querySelector('.guessSubmit')
       const guessField = document.querySelector('.guessField')
 
+      
+      let randomNumber = Math.floor(Math.random() * 100) + 1
+      //console.log(randomNumber)
       let guessCount = 1
       let resetButton
 
+      guessSubmit.addEventListener('click', checkGuess)
+
       function checkGuess () {
         const userGuess = Number(guessField.value)
-
+      
         if (guessCount === 1) {
             guesses.textContent = 'Previous guesses: '
         }
+
         guesses.textContent += ` ${userGuess}`
 
         if (userGuess === randomNumber) {
@@ -91,8 +94,6 @@
         guessField.value = ''
         guessField.focus()
       }
-
-      guessSubmit.addEventListener('click', checkGuess)
 
       function setGameOver() {
         guessField.disabled = true
@@ -121,8 +122,8 @@
         lastResult.style.backgroundColor = 'white'
 
         randomNumber = Math.floor(Math.random() * 100) + 1
-
       }
+
     </script>
   </body>
 </html>
