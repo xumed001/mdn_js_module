@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+        // const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+        // console.log(shopping.length)
+
+        // shopping[0] = 'tea';
+        // console.log(shopping)
+
+        // multidimensional array, accessed by n [][]
+        // const random = ["tree", 795, [0, 1, [5,6,7]]];
+        // console.log(random[2][2][1]);
+
+        // pop removes the last item in an array
+        // shift removes the first item from an array
+        // splice() if you know the index, it removes it + how many (second argument)
+        // const cities = ["Manchester", "Liverpool", "Edinburgh", "Carlisle"];
+        // const index = cities.indexOf("Liverpool");
+        // if (index !== -1) {
+        // cities.splice(index, 1);
+        // }
+        // console.log(cities);
+
+        // // accessing every item in an array for...of statement
+        // const birds = ["Parrot", "Falcon", "Owl"];
+
+        // for(const bird of birds){
+        //     console.log(bird);
+        // }
+
+
+        // // map()
+        // function double (num){
+        //     return num*2
+        // }
+        // const numbers = [5,2,7,6]
+        // const doubled = numbers.map(double)
+        // console.log(doubled);
+
+        // split() join() toString()
+        const data = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+        const cities = data.split(',')
+        console.log(cities)
+
+        const commaSeparated = cities.join(',');
+        console.log(commaSeparated)
+        console.log(typeof(commaSeparated))
+    </script>
+</body>
+</html>
