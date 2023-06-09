@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Loops: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
+  </head>
+
+  <body>
+    <h1>Loops test</h1>
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <!--  loop test 1
+    <script>
+    const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+    const list = document.createElement('ul');
+
+    // Add your code here
+    for (const item of myArray) {
+        let listItem = document.createElement('li')
+        listItem.textContent += `${ item }`
+        list.appendChild(listItem);
+    }
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    section.appendChild(list);
+  </script> -->
+
+  <!-- loop test 2 
+    <script>
+    const name = 'Mustafa';
+    const para = document.createElement('p');
+
+    const phonebook = [
+      { name : 'Chris', number : '1549' },
+      { name : 'Li Kang', number : '9634' },
+      { name : 'Anne', number : '9065' },
+      { name : 'Francesca', number : '3001' },
+      { name : 'Mustafa', number : '6888' },
+      { name : 'Tina', number : '4312' },
+      { name : 'Bert', number : '7780' },
+      { name : 'Jada', number : '2282' },
+    ]
+
+    // Add your code here
+    for (let i = 0; i < phonebook.length; i++) {
+      if (name === phonebook[i].name) {
+        para.textContent = `${phonebook[i].name}'s number is ${phonebook[i].number}`
+        break;
+      }
+      if (name !== phonebook[i].name) {
+        para.textContent = `${name} not found in phonebook.`
+      }
+
+    }
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+    section.appendChild(para);
+  </script> -->
+  <script>
+    let i = 500;
+    const list = document.createElement('ul');
+    
+    function isPrime(num) {
+      for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+
+    // Add your code here
+    do {
+      if (isPrime(i)) {
+        let listItem = document.createElement('li')
+        listItem.textContent += `${i} `
+        list.appendChild(listItem)
+      }
+      i--;
+    } while (i > 1)
+
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+    section.appendChild(list);
+  </script>
+
+</html>
+
+
