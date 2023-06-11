@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+
+  <input class="numberInput" type="text">
+  <ul></ul>
+
+  <script>
+    const input = document.querySelector('.numberInput');
+    const list = document.querySelector('ul');
+    const ans = [];
+    
+
+    function suqared(num){
+        return num * num;
+    }
+
+    function cubed(num) {
+        return num * num * num;
+    }
+
+    function factorial(num) {
+        if (num < 0) return undefined;
+        if (num === 0) return 1;
+        let x = num - 1;
+        while(x>1) {
+            num *= x;
+            x--
+        }
+        return num;
+    }
+
+    input.addEventListener('change', () => {
+        const num = parseFloat(input.value)
+        const listItem = document.createElement('li')
+        list.innerHTML = ''
+        
+
+        if(isNaN(num)){
+            listItem.textContent = 'You need to enter a Number!'
+        } 
+        if (!isNaN(num)) {
+            listItem.textContent = `${num} squared is ${suqared(num)}.  `
+            listItem.textContent += `${num} cubed is ${cubed(num)}.  `
+            listItem.textContent += `${num} factorial is ${factorial(num)}.`
+        }
+        list.appendChild(listItem);
+    })
+
+  </script>
+</body>
+</html>
