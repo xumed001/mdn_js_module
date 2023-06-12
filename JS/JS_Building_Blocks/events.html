@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        /* button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            color: black;
+        } */
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 90%;
+            margin: 0 auto;
+        }
+        .tile {
+            height: 100px;
+            border: 1px solid black;
+
+            margin: 1px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+
+    <h2>Keydown event</h2>
+    <input type="text" id="textBox" />
+    <div id="output"></div>
+    <!-- <button>Change Color</button> -->
+
+    <br>
+    <h2>Preventing default behavior</h2>
+    <form>
+        <div>
+          <label for="fname">First name: </label>
+          <input id="fname" type="text" />
+        </div>
+        <div>
+          <label for="lname">Last name: </label>
+          <input id="lname" type="text" />
+        </div>
+        <div>
+          <input id="submit" type="submit" />
+        </div>
+      </form>
+      <p></p>
+      
+
+    <script>
+        const container = document.querySelector('#container')
+
+        function random(number) {
+            return Math.floor(Math.random() * (number+1))
+        }
+
+        // function changeColor() {
+        //     const ranCol = `rgb(${random(255)},${random(255)},${random(255)}, ${(Math.random().toFixed(1))})`
+
+        //     document.body.style.backgroundColor = ranCol
+        //     // console.log(ranCol)
+        // }
+
+        // changing btn color 
+        // The target property of the event object(e) is always a reference to the element the event occurred upon
+        // function changeColor(e) {
+        //     const ranCol = `rgb(${random(255)},${random(255)},${random(255)}, ${(Math.random().toFixed(1))})`
+
+        //     e.target.style.backgroundColor = ranCol
+        //     // console.log(e)
+        // }
+
+        function bgChange() {
+            const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)}, .5)`;
+            return rndCol;
+        }
+
+
+        container.addEventListener('click', (event) => {
+            event.target.style.backgroundColor = bgChange()
+        })
+
+
+
+        // event properties, keyboard event
+        const textBox = document.querySelector('#textBox')
+        const output = document.querySelector('#output')
+
+        textBox.addEventListener('keydown', (e) => {
+            output.textContent += `You pressed "${e.key}".`
+        })
+
+        // preventing default e behavior
+        const form = document.querySelector('form')
+        const fname = document.getElementById('fname')
+        const lname = document.getElementById('lname')
+        const para = document.querySelector('p')
+
+        form.addEventListener('submit', (e) => {
+            if (fname.value === '' || lname.value === ''){
+                e.preventDefault()
+                para.textContent = 'You need to fill both names!'
+            } 
+        })
+    </script>
+</body>
+</html>
