@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Test</title>
+</head>
+<body>
+    <h2>Task 1</h2>
+    <button class="off">Machine is off</button>
+
+    <br>
+    <h2>Task 2</h2>
+
+
+    <script>
+
+        const btn = document.querySelector('button');
+
+        // Add your code here
+        
+        btn.addEventListener('click', updateBtn)
+
+        function updateBtn () {
+            if (btn.className === 'on') {
+                btn.textContent = 'Machine is off'
+                btn.className = 'off'
+            } else {
+                btn.textContent = 'Machine is on'
+                btn.className = 'on'
+            }
+        }
+
+    </script>
+</body>
+</html>
